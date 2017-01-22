@@ -10,4 +10,4 @@ ENV PATH $PATH:/usr/games
 COPY docker.cow /usr/share/cowsay/cows/
 RUN ln -sv /usr/share/cowsay/cows/docker.cow /usr/share/cowsay/cows/default.cow
 
-CMD ["cowsay"]
+ENTRYPOINT ["cowsay"]
